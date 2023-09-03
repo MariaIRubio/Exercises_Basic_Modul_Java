@@ -1,0 +1,19 @@
+if (age <= 12) {
+			Quiz primaryQuiz = new Quiz(new String[] { "What is the largest planet in our solar system?",
+					"How many continents are there on Earth?", "Which animal is known as the \"king of the jungle\"?",
+					"What is the process called when a caterpillar transforms into a butterfly?",
+					"What is the capital city of France?" },
+					new String[] { "Jupiter", "Seven", "Lion", "Metamorphosis", "Paris" });
+			primaryQuiz.startQuiz(scanner);
+		}else {
+			Quiz secondaryQuiz = new Quiz(new String[] { "In which year was the first successful Apollo mission that put a man on the Moon?",
+					"Who wrote the famous novel \"1984\"?",
+					"Which scientist formulated the theory of relativity?",
+					"What is the chemical element with atomic number 6?",
+					"What famous painting is originally titled \"La Gioconda\"?" },
+					new String[] { "1969", "George Orwell", "Albert Einstein", "Carbon", "Mona Lisa"}
+					);
+			secondaryQuiz.startQuiz(scanner);
+		}
+		
+		scanner.close();
